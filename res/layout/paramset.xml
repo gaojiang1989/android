@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/paramsetlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <TextView android:id="@+id/tvClassChoose"
+            android:text="选择课程：" 
+            android:layout_marginLeft="20dip"
+            android:textSize="30px"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+        <Spinner android:id="@+id/spnClassSet"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/tvClassChoose"
+            android:layout_height="wrap_content"
+            android:entries="@array/textbook_labels" />
+        <Button
+        	android:id="@+id/btnParamSet"
+       		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/spnClassSet"
+        	android:text="@string/paramset_btnSure" />
+
+</RelativeLayout>

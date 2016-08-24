@@ -1,0 +1,41 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow>
+        <TextView 
+            android:id="@+id/tvRegister"
+            android:text="注册码:"
+            android:layout_marginLeft="20dip"
+            android:textSize="28px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <EditText android:width="60pt"
+            android:id="@+id/edtRegister"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    
+    <TableRow>
+        <TextView android:text="课 程 ："
+            android:layout_marginLeft="20dip"
+            android:textSize="28px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <Spinner android:id="@+id/spTextbook"
+            android:prompt="@string/register_textbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/textbook_labels"/>
+    </TableRow>
+    
+    <TableRow>
+        <Button 
+            android:id="@+id/btnRegister"
+            android:text="注册"/>
+    </TableRow>
+
+</TableLayout>

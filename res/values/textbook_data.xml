@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    
+    <string-array name="textbook_labels">
+        <item>标准日本语初级</item>
+        <item>标准日本语中级</item>
+        <item>新完全マスター日本語能力試験N2語彙</item>
+        <item>新完全マスター日本語能力試験N2漢字</item>
+    </string-array>
+</resources>
