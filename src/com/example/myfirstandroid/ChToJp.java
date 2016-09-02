@@ -217,6 +217,7 @@ public class ChToJp extends Activity {
 		List<Word> list = getWord(lessonId);
 		for (int x = 0; x < list.size(); x++) {
 			TableRow row = new TableRow(ChToJp.this);
+			row.setPadding(10,10,0,0);
 			// 创建显示日语单词的文本组件
 			TextView tv = new TextView(ChToJp.this);
 			if(isChToJp==1){
@@ -237,6 +238,7 @@ public class ChToJp extends Activity {
 			Button bw = new Button(ChToJp.this);
 			bw.setTag(list.get(x).getId());
 			bw.setText("查看");
+			bw.setBackgroundColor(Color.YELLOW);
 			bw.setWidth(layout.getWidth() * 2 / 3);
 			bw.setOnClickListener(new OnBtnSearch());
 			row.addView(bw, 1);
@@ -308,8 +310,10 @@ public class ChToJp extends Activity {
 				}else if(isChToJp==3){
 					but.setText(w.getJpword()+ "(" + w.getChword()+ ")");
 				}
+				but.setBackgroundColor(Color.WHITE);
 			}else{
 				but.setText("查看");
+				but.setBackgroundColor(Color.YELLOW);
 			}
 			
 			
